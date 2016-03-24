@@ -77,7 +77,7 @@ Package.onUse(function (api) {
         'lib/styl/components/_waves.import.styl'
     ];
 
-    api.addFiles(stylFiles, 'client');
+    api.addFiles(stylFiles, 'client', {isImport: true});
     api.addFiles('lib/styl/materialize-components.styl', 'client', {isImport: true});
 
     api.export('Materialize', 'client');
